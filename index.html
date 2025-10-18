@@ -3,11 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #70c5ce; /* sky blue */
+    font-family: Arial, sans-serif;
+  }
+  canvas {
+    background: linear-gradient(to bottom, #70c5ce 0%, #a0e0ff 100%);
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+  }
+  .controls {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .controls button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #68b2e7;
+  }
+</style>
   <title>Flappy Bird Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <canvas id="gameCanvas" width="400" height="500"></canvas>
+<div class="controls">
+  <button id="upBtn">W / ↑</button>
+  <button id="downBtn">S / ↓</button>
+  <button id="pauseBtn">pauseBtn</button>
+  <button id="restartBtn">restartBtn</button>
+</div>
 
   <script src="script.js"></script>
 </body>
